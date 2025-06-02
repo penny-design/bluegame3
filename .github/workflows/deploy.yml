@@ -1,0 +1,66 @@
+# .github/workflows/deploy.yml
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 自动获取 Account ID
+      - name: Fetch Account ID
+        id: fetch_account_id
+        run: |
+          if [[ -n "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]]; then
+            ACCOUNT_ID="${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
+            echo "Using provided CLOUDFLARE_ACCOUNT_ID from secrets."
+          else
+            ACCOUNT_ID=$(curl -X GET "https://api.cloudflare.com/client/v4/accounts" -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" -H "Content-Type:application/json" | jq ".result[0].id" -r)
+            if [[ "$ACCOUNT_ID" == "null" ]]; then
+              echo "Failed to get an account id, please make sure you have set up CLOUDFLARE_API_TOKEN correctly!"
+              exit 1
+            fi
+          fi
+          echo 'account_id='$ACCOUNT_ID >> $GITHUB_OUTPUT
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      # 如果需要构建，取消注释以下部分
+      # - name: Use Node.js 18.x
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18.x
+      #     cache: 'npm'
+      #
+      # - name: Install packages
+      #   run: npm install
+      #
+      # - name: Build
+      #   run: npm run build
+
+      # 准备部署目录结构
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p deploy_temp/bluegame3
+          cp -r * deploy_temp/bluegame3/ 2>/dev/null || true
+          # 排除 .git 和其他不需要的文件
+          rm -rf deploy_temp/bluegame3/.git
+          rm -rf deploy_temp/bluegame3/.github
+          rm -rf deploy_temp/bluegame3/node_modules
+          # 如果有构建输出，使用构建结果
+          # cp -r dist/* deploy_temp/bluegame3/ 2>/dev/null || true
+
+      # 使用 wrangler 部署到 Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        run: |
+          npm install -g wrangler
+          npx wrangler pages deploy deploy_temp --project-name project-design
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ steps.fetch_account_id.outputs.account_id }}

@@ -101,11 +101,14 @@
 }
 ._图片 {
 }
+.paragraph {
+  text-align:left;
+}
 ._默认样式 {
 }
 .button {
 }
-.paragraph {
+.paragraph1 {
   text-align:left;
 }
 .line {
@@ -154,5 +157,7 @@
   color:#FFFFFF;
 }
 .flow_shape {
+}
+.icon {
 }
 textarea, select, input, button { outline: none; }

@@ -164,9 +164,15 @@
 .image {
   color:#000000;
 }
+.vertical_line {
+}
+.flow_shape {
+}
+.table {
+}
 .iconfont {
-  font-family:'iconfont', sans-serif;
-  font-weight:400;
+  font-family:'iconfont', 'iconfont Medium', sans-serif;
+  font-weight:500;
   font-style:normal;
   font-size:18px;
   color:#666666;
@@ -174,7 +180,7 @@
 .marker {
   color:#FFFFFF;
 }
-.flow_shape {
+.flow_shape1 {
 }
 .icon {
 }

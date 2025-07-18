@@ -16,7 +16,7 @@
   position:absolute;
   z-index:0;
 }
-#u4172_img {
+#u4173_img {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -24,50 +24,13 @@
   width:1500px;
   height:819px;
 }
-#u4172 {
+#u4173 {
   border-width:0px;
   position:absolute;
   left:77px;
   top:64px;
   width:1500px;
   height:819px;
-  display:flex;
-}
-#u4172 .text {
-  position:absolute;
-  align-self:center;
-  padding:2px 2px 2px 2px;
-  box-sizing:border-box;
-  width:100%;
-}
-#u4172_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-  visibility:hidden;
-}
-#u4173_div {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:374px;
-  height:515px;
-  background:inherit;
-  background-color:rgba(11, 11, 9, 1);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#u4173 {
-  border-width:0px;
-  position:absolute;
-  left:640px;
-  top:232px;
-  width:374px;
-  height:515px;
   display:flex;
 }
 #u4173 .text {
@@ -83,21 +46,28 @@
   text-transform:none;
   visibility:hidden;
 }
-#u4174_img {
+#u4174_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
-  width:521px;
-  height:365px;
+  width:374px;
+  height:515px;
+  background:inherit;
+  background-color:rgba(11, 11, 9, 1);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
 }
 #u4174 {
   border-width:0px;
   position:absolute;
-  left:561px;
-  top:267px;
-  width:521px;
-  height:365px;
+  left:640px;
+  top:232px;
+  width:374px;
+  height:515px;
   display:flex;
 }
 #u4174 .text {
@@ -108,6 +78,36 @@
   width:100%;
 }
 #u4174_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
+}
+#u4175_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:521px;
+  height:365px;
+}
+#u4175 {
+  border-width:0px;
+  position:absolute;
+  left:561px;
+  top:267px;
+  width:521px;
+  height:365px;
+  display:flex;
+}
+#u4175 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u4175_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;

@@ -16,7 +16,7 @@
   position:absolute;
   z-index:0;
 }
-#u2722_div {
+#u262_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -37,7 +37,7 @@
   color:#FFFFFF;
   text-align:left;
 }
-#u2722 {
+#u262 {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -52,148 +52,24 @@
   color:#FFFFFF;
   text-align:left;
 }
-#u2722 .text {
+#u262 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u2722_text {
+#u262_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
 }
-#u2723_div {
+#u263_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
-  width:779px;
-  height:80px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:14px;
-  line-height:20px;
-}
-#u2723 {
-  border-width:0px;
-  position:absolute;
-  left:44px;
-  top:85px;
-  width:779px;
-  height:80px;
-  display:flex;
-  font-size:14px;
-  line-height:20px;
-}
-#u2723 .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#u2723_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#u2724_div {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:52px;
-  height:25px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
-  font-weight:700;
-  font-style:normal;
-}
-#u2724 {
-  border-width:0px;
-  position:absolute;
-  left:28px;
-  top:55px;
-  width:52px;
-  height:25px;
-  display:flex;
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
-  font-weight:700;
-  font-style:normal;
-}
-#u2724 .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#u2724_text {
-  border-width:0px;
-  white-space:nowrap;
-  text-transform:none;
-}
-#u2725_div {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:52px;
-  height:25px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
-  font-weight:700;
-  font-style:normal;
-}
-#u2725 {
-  border-width:0px;
-  position:absolute;
-  left:28px;
-  top:198px;
-  width:52px;
-  height:25px;
-  display:flex;
-  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
-  font-weight:700;
-  font-style:normal;
-}
-#u2725 .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#u2725_text {
-  border-width:0px;
-  white-space:nowrap;
-  text-transform:none;
-}
-#u2726_div {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:446px;
+  width:841px;
   height:60px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
@@ -202,28 +78,34 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
+  font-family:'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC', sans-serif;
+  font-weight:500;
+  font-style:normal;
   font-size:14px;
   line-height:20px;
 }
-#u2726 {
+#u263 {
   border-width:0px;
   position:absolute;
-  left:44px;
-  top:234px;
-  width:446px;
+  left:27px;
+  top:65px;
+  width:841px;
   height:60px;
   display:flex;
+  font-family:'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC', sans-serif;
+  font-weight:500;
+  font-style:normal;
   font-size:14px;
   line-height:20px;
 }
-#u2726 .text {
+#u263 .text {
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
 }
-#u2726_text {
+#u263_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
